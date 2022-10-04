@@ -17,7 +17,7 @@ describe("string tests", () => {
     const string2 ="";
     
     //Act
-    const result2 = 'String is empty'
+    const result2 = stringLength(string2);
     
     //Assert
     expect(result2).toBe(result2);
@@ -28,7 +28,7 @@ describe("string tests", () => {
     const string3 ="Australopitecus";
     
     //Act
-    const result3 = 'String is too long'
+    const result3 = stringLength(string3);
     
     //Assert
     expect(result3).toBe(result3);
