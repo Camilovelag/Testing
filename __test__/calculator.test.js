@@ -113,3 +113,41 @@ describe("calculator multiply tests", () => {
     expect(result3).toBeCloseTo(3.45);
   });
 });
+
+  describe("calculator divide tests", () => {
+    test("calculator divide 1", () => {
+      //Arrange
+      const a = 6;
+      const b = 3;
+  
+      //Act
+      const result1 = Calculator.divide(a, b);
+  
+      //Assert
+      expect(result1).toEqual(2);
+    });
+  
+    test("calculator divide 2", () => {
+      //Arrange
+      const a = -15;
+      const b = 3;
+  
+      //Act
+      const result2 = Calculator.divide(a, b);
+  
+      //Assert
+      expect(result2).toEqual(-5);
+    });
+  
+    test("calculator divide 3", () => {
+      //Arrange
+      const a = 8.2;
+      const b = 2;
+  
+      //Act
+      const result3 = Calculator.divide(a, b);
+  
+      //Assert
+      expect(result3).toBeCloseTo(4.1);
+    });
+});
