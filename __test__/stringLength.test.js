@@ -1,4 +1,4 @@
-const stringLength = require('../src/modules/stringLength');
+const stringLength = require('../src/modules/stringLength.js');
 
 describe("string tests", () => {
   test("string length", () => {
