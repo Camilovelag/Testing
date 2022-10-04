@@ -75,3 +75,41 @@ describe("calculator subtract tests", () => {
     expect(result3).toBeCloseTo(-0.8);
   });
 });
+
+describe("calculator multiply tests", () => {
+  test("calculator multiply 1", () => {
+    //Arrange
+    const a = 1;
+    const b = 2;
+
+    //Act
+    const result1 = Calculator.multiply(a, b);
+
+    //Assert
+    expect(result1).toEqual(2);
+  });
+
+  test("calculator multiply 2", () => {
+    //Arrange
+    const a = -15;
+    const b = 10;
+
+    //Act
+    const result2 = Calculator.multiply(a, b);
+
+    //Assert
+    expect(result2).toEqual(-150);
+  });
+
+  test("calculator multiply 3", () => {
+    //Arrange
+    const a = 1.5;
+    const b = 2.3;
+
+    //Act
+    const result3 = Calculator.multiply(a, b);
+
+    //Assert
+    expect(result3).toBeCloseTo(3.45);
+  });
+});
