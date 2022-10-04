@@ -37,3 +37,41 @@ describe("calculator sum tests", () => {
     expect(result3).toBeCloseTo(3.8);
   });
 });
+
+describe("calculator subtract tests", () => {
+  test("calculator subtract 1", () => {
+    //Arrange
+    const a = 5;
+    const b = 2;
+
+    //Act
+    const result1 = Calculator.subtract(a, b);
+
+    //Assert
+    expect(result1).toEqual(3);
+  });
+
+  test("calculator subtract 2", () => {
+    //Arrange
+    const a = -15;
+    const b = 10;
+
+    //Act
+    const result2 = Calculator.subtract(a, b);
+
+    //Assert
+    expect(result2).toEqual(-25);
+  });
+
+  test("calculator subtract 3", () => {
+    //Arrange
+    const a = 1.5;
+    const b = 2.3;
+
+    //Act
+    const result3 = Calculator.subtract(a, b);
+
+    //Assert
+    expect(result3).toBeCloseTo(-0.8);
+  });
+});
